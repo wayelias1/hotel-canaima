@@ -1,0 +1,149 @@
+*{
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+body{
+    background: url('imagen/hotel.jpg') bottom / cover no-repeat;
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    background: rgb(29, 29, 29);
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.8;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+}
+header{
+    background: rgba(71, 71, 71, 0.8);
+}
+
+nav{
+    display: flex;
+    padding: 10px;
+}
+
+nav *{
+    color: white;
+}
+
+nav h1{
+    font-size: 50px;
+    padding: 0 20px;
+    text-shadow: rgba(108, 154, 210, 0.6) 4px 4px ;
+}
+
+nav h1:hover{
+    cursor: pointer;
+    text-shadow: 4px 4px 7px rgb(255, 255, 255,0.7) ;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 35px;
+} 
+
+nav ul li:hover{
+    background: linear-gradient(rgba(108, 154, 210, 0.2),rgba(108,154,210,0.4),rgba(108,154,210,0.2));
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.texto{
+    margin: 30px;
+}
+
+.slider{
+    width: 80%;
+    min-width: 500px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 32px;
+    box-shadow: 0 0 40px rgb(99, 99, 99);
+}
+
+.slider #slider{
+    display: flex;
+    height: 500px;
+    width: 400%;
+    list-style: none;
+    margin-left: -100%;
+    padding: 0;
+}
+.slider li{
+    width: 100%;
+}
+.slider img{
+    /*object-fit: cover;*/
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#b-izq, #b-der{
+    background-color: rgba(144, 144, 144,0.7);
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    top: 48%;
+}
+#b-izq:hover , #b-der:hover{
+    background-color: rgba(59, 171, 171, 0.9);
+}
+#b-der{
+    right: 0;
+}
+
+.galeria{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin: 0 30px;
+}
+
+.galeria-foto{
+    width: 20vw;
+    height: 20vh;
+}
+
+.galeria-foto img{
+    width: 100%;
+    height: 100%;
+}
+
+.zoom{
+    background: rgba(80,80,80,0.7);
+    top: 0;
+    left: 0;
+    width: 90vw !important;
+    height: 90vh !important;
+    padding: 5vh 5vw;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+}
