@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url('imagen/hotel.jpg') bottom / cover no-repeat;
+    background: url('../imagen/hotel.jpg') bottom / cover no-repeat;
     height: 100vh;
 }
 
