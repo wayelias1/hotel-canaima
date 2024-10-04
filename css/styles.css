@@ -1,0 +1,599 @@
+body {
+	margin: 0px;
+	background: rgba(239, 241, 231, 0.7);
+}
+header .up
+{
+	height: 200px;
+}
+p,#list{
+	margin-left: 6%;
+	margin-right: 6%;
+	font-family: Berlin Sans FB;
+	color: black;
+}
+/*Pie de pagina*/
+footer{
+	padding: 20px;
+	background-color: rgb(1, 26, 7);
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+	bottom: 0;
+}
+/*Menu*/
+nav{
+	background: url("../imag/hoja3.jpg") no-repeat;
+	margin-bottom: 30px;
+	display: flex;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	max-height: 63px;
+}
+nav a{
+	height: 63px;
+}
+nav a img{
+	width: 100%;
+	height: 100%;
+	max-width: 85px;
+}
+nav ul{
+	list-style: none;
+	margin: 9px 0 0 0;
+	padding: 10px;
+}
+nav ul li{
+	display: inline-block;
+	padding: 6px 20px;
+	transition-property: color, background-color;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+nav ul li:not(:last-child) {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+nav ul li:hover,
+nav ul li:focus {
+  color: #333;
+  background-color: #1a4e0d;
+  border-radius: 5px;
+  padding: 6px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white; 
+	font-family: sans-serif;
+	font-weight: bold; 
+}
+
+/*Tablas*/
+table{
+	margin: 0 auto;
+	border: solid 2%;
+	width: 70%;
+	background-color: rgba(100,100,100,0.6);
+	border-color-top: black;
+}
+table td{
+	text-align: center;
+	color: white;
+	padding: 2%;
+	border: solid 1px;
+}
+table button{
+	cursor: pointer;
+	margin: 0;
+	padding: 5%;
+	width: 100%;
+	background-color: rgba(90,10,10,1);
+	color: white
+}
+table button:hover{
+	background: rgba(120,10,10,0.8);
+}
+#loca{
+	cursor: pointer;
+	margin: 0;
+	padding: 5%;
+	width: 100%;
+	background-color: rgba(90,10,10,1);
+	color: white
+}
+#loca:hover{
+	background: rgba(120,10,10,0.8);
+}
+/*tabla de comentarios*/
+#comentario{
+	width: 55%;
+	border: solid 4px;
+}
+#comentario td{
+	border: none;
+}
+#comentario-tit{
+	background: rgba(90,90,90,1);
+	margin: 0;
+	font-size: 160%;
+	padding: 3%;
+}
+#comentario button{
+	background-color: rgba(10,60,20,1);
+	width: 30%;
+	padding: 2%;
+	margin-bottom: 2%; 
+}
+#comentario button:hover{
+	background-color: rgba(10,90,20,0.6);
+}
+#comentario input{
+	border: solid 2px gray !important; 
+	width: 77% !important;
+}
+#comentario [class*="icon-"]{
+	position: absolute;
+	margin: 0 0 0 3%;
+	background: rgba(0,0,0,0);
+	padding: 0.3%; 
+}
+#cuadro{
+	height: 200px;
+	width: 80%;
+}
+
+/*Menu de listado para pantalla pequeña*/
+
+#MenuD{
+	width: 100%;
+	height: 100%;
+	max-width: 85px;
+	position: absolute;
+	z-index: -10;
+	cursor: pointer;
+	}
+#menu-bar{
+	display: none;
+}
+
+/*Barras para ingresar datos*/
+.content p input, #content-mod p input, #perfil-nc p input, #comentario input{
+	width: 55%;
+	height: 25px;
+	border-style: outset;
+	border-right: 10px;
+	border-left: 10px;
+	border-top: 5px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 17px;
+	background: none;
+	outline: none;
+	margin-bottom: 20px;
+	color: white;
+}	
+
+.content p input:focus{
+	border-color: green;
+}
+
+.content p input:-webkit-autofill{
+    -webkit-box-shadow: 0px 0px 0px 1000px #BEF1EA inset;
+    }    
+
+/*Barra de perfil*/    
+#cajap{
+	height: 100%;
+	right: 1%;
+	width: 20%;
+	min-width: 262px;
+	position: absolute;
+	background: rgb(50,60,50);
+}
+#perfil{
+	height: 63px;
+	width: 100%;
+	max-width: 80px;
+	border-top: 3px black;
+}
+#nperfil{
+	color: white;
+	bottom: 40%;
+	left: 0;
+	font-size: 200%;
+	width: 100%;
+	position: relative;
+	margin: 1% 2%;
+}
+#cajap:hover{
+	cursor: pointer;
+}
+/*Menu del perfil*/
+#useropcion{
+	margin: 0;
+	top: 70%; 
+	z-index: 12;
+	float: left;
+	position: absolute;
+	display: none;
+	right: 0;
+	list-style: none;
+	padding: 20px 0;
+	width: 100%;
+}
+#useropcion li {
+	width: 100%;
+	height: 100%;
+	background: rgba(50,60,50,0.6);
+	text-align: center;
+	float: right;
+	top: 0;
+	right: 0;
+	margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+	z-index: 12;
+	padding: 0px;
+}
+#useropcion li a {
+	width: 100%;
+	height: 100%;
+	color: white;
+	position: relative;
+	display: block;
+	padding: 20px 0;
+}
+#useropcion li:not(:last-child) {
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 0; 
+}
+#useropcion li:hover{
+	background: rgba(90,90,90,0.8);
+	border-radius: 0; 
+}
+#bar{
+	display: none;
+}
+#bar:checked ~ #useropcion{
+	list-style: disc;
+	float: left;
+	display: block;
+}
+/*Modificaciones del perfil*/
+#imagen{
+	width: 30%;
+	height: 30%;
+	margin: 0 auto;
+}
+
+#modii{
+	display: flex;
+	align-items: center;
+}
+#text{
+	text-align: center;
+	color: white;
+}
+
+/*Logo de pagina*/
+#logo {
+	width: 100%;
+	height: 100%;
+	max-height: 200px;
+}
+
+#register{
+	margin-top: 60px;
+	font-size: 20px;
+	font-family: arial;
+	font-weight: bold;
+}
+.cont{
+	font-size: 20px;
+	font-weight: ;
+	text-align: center;
+	text-shadow: 0px 1px 5px #656FEA;
+	color: white;
+}
+.cont ul{
+	text-shadow: none;
+	text-align: left;
+	justify-content: justify;
+	list-style: none;
+}
+.cont ul li{
+	margin-bottom: 1%;
+}
+.content, .content p{
+	text-align: center;
+	font-weight: bold;
+	font-family: arial;
+	color: white;
+}
+
+/*Botones de registro y entrada*/
+#boton{
+	margin-top: 20px;
+	border-color: rgb(0,40,0,0.8);
+	background: radial-gradient(#08EE53, #098229);
+	color: black;
+	font-size: 17px;
+	padding: 10px;
+	font-weight: bold;
+}	
+#boton:hover{
+	background: radial-gradient(#06B33E, #045419);
+	color: rgb(230,230,230);
+	font-size: 18px;
+	transition: all 0.8s ease;
+	padding: 11px;
+	box-shadow: 2px 4px 3px -2px rgba(0,0,0,0.49);
+	text-shadow: 0px 2px 12px #000f6D;
+	border-color: rgb(0,40,0,0.8);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*Menu de reservas*/
+#casilla{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+#Sect{
+	height: 370px; 
+	margin-right: 1.5%;
+}
+#reserva{
+	width: 100%;
+	height: 100%;
+	max-width: 318px;
+	margin-left: 15px;
+	position: relative;
+	z-index: 1;
+	top: 0;
+}
+#habit{
+	text-align: center;
+	background: rgba(100,100,100,0.57); 
+	color: white;
+	height: 100%;
+	width: 23.50%;
+	max-width: 318px;
+	max-height: 370px;
+	margin-left: 15px;
+	z-index: 0;
+	position: absolute;
+	line-height: 390px;
+	font-family: arial;
+	font-size: 240%;
+	text-decoration: none;
+	border: none;
+}
+#habit:hover{
+	z-index: 2;
+	cursor: pointer;
+}
+#reserva:hover{
+	z-index: -1;
+}
+
+/*Ventana de pago*/
+#modal{
+	background: rgba(100,100,100,0.7);
+	position: fixed; 
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	top: 0;
+	opacity: 0;
+}
+#modal:target{
+	opacity: 1;
+	z-index: 10;
+}
+#title-mod{
+	margin-top: 1%;
+	margin-bottom: 0;
+	font-size: 25px;
+	width: 54%;
+	margin-left: 23%;
+	padding: 1.2% 0 0 0;
+	position: absolute;
+	background: rgba(70,70,70,0.8);
+	color: white;
+	height: 90%;
+}
+#content-mod{
+	background: white;
+	width: 50%;
+	height: 70%;
+	padding: 2.7% 1%;
+	font-size: 15px;
+	position: relative;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 5px #CCC;
+	margin: 5% auto;
+}
+#content-mod p{
+	margin: 0.5%;
+	color: black;
+}
+#content-mod table{
+	margin-bottom: 1%;
+}
+#content-mod p input{
+	color: black;
+	width: 90%;
+	height: 5%;
+	font-size: 100%;
+}
+#content-mod button{
+	margin: 0;
+}
+#closeM{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+	padding: 0.5% 1%;
+	top: 0;
+	right: 0;
+	position: absolute;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*Localizacion del sitio*/
+#locate{
+	margin: auto;
+	width: 70%;
+	height: 70%;
+}
+#locate2{
+	height: 410px;
+	width: 100%;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.49);
+}
+
+/*iconos*/
+#contact{
+	width: 2.8%;
+	height: 2.8%;
+}
+[class*="icon-"]{
+	background: rgba(100,100,100,0.6);
+	border-radius: 50%;
+	padding: 0.3%; 
+}
+#content-mod [class*="icon-"]{
+	position: relative;
+	background: none; 
+}
+
+/*galeria de fotos*/
+#galeria{
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+}
+#galeria div{
+	margin: 2% auto;
+	position: static;
+	box-shadow: 0 0 10px 10px rgba(57, 64, 57, 0.8);
+	border-radius: 12px;
+	width: 100%;
+	height: 160px;
+	max-width: 211.483px;
+	transition: all 1s ease;
+}
+#galeria div img{
+	width: 100%;
+	height: 100%;
+}
+#galeria div img:hover{
+	box-shadow: 0 0 5px 5px rgba(255,255,255,0.59);
+	cursor: pointer;
+}
+
+#galeria div .img-active{
+	position: fixed;
+	z-index: 10;
+	width: 80%;
+	height: 80%;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0;
+	background-color: rgba(100,100,100,0.7);
+	padding: 10%;
+	left: 0;
+	top: -10%;
+}
+#link{
+	color: white;
+}
+#guia{
+	margin: 0 30%;
+	width: 40%;
+	height: 40%;
+}
+
+@media (max-width: 1000px){
+	#MenuD{
+		position: absolute;
+		text-decoration: none;
+		color: white;
+		font-size: 54px;
+		z-index: 2;
+		text-align: center;
+		border-radius: 15px;
+		font-weight: bold;
+		right: 0;
+	}
+	#MenuD:hover {
+		background-color: #1a4e0d;
+	}
+	#menu-bar:checked ~ #Menu {
+		list-style: disc;
+		float: left;
+		display: block;
+	}
+	nav ul li{
+		width: 60%;
+		height: 60%;
+		background: rgba(50,60,50,0.6);
+		text-align: center;
+		float: right;
+		top: 0;
+		right: 0;
+		margin: 0;
+    	margin-right: 0;
+   		margin-left: 0;
+		z-index: 12;
+		padding: 0px;
+	}
+	nav ul li a{
+		width: 100%;
+		height: 100%;
+		color: white;
+		position: relative;
+		display: block;
+		padding: 20px 0;
+	}
+	nav ul li:not(:last-child) {
+    	margin-right: 0;
+   	 	margin-left: 0;
+    	border-radius: 0;
+}
+	nav ul li:hover{
+		padding: 0;
+		background: rgba(100,100,100,0.8);
+		cursor: pointer;
+	}
+	nav ul{
+		margin: 0;
+		margin-top: 56px;
+		z-index: 12;
+		float: left;
+		position: absolute;
+		display: none;
+		right: 0;
+		border: none;
+	}
+
+	#cajap{
+		position: relative;
+		width: 20%;
+		min-width: 262px;
+		background: rgb(50,60,50);
+		margin-left: 20%;
+		height: 63px;
+	}
+}
+/*background: linear-gradient(90deg, #DAEFDA, #D9ECD2, #D1E0D5, #D9ECD2, #DAEFDA);*/
